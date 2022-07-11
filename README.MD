@@ -8,3 +8,9 @@ This repository contains all the assignments, homeworks and problems discussed d
 * Each value in Rust has an owner.
 * There can only be one owner at a time.
 * When the owner goes out of scope, the value will be dropped.
+  
+ 
+###  The Rules of References
+* Let’s recap what we’ve discussed about references:
+* At any given time, you can have either one mutable reference or any number of immutable references.
+* References must always be valid.
