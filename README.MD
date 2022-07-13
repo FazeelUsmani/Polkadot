@@ -1,7 +1,8 @@
 # Substrate Saturday Bootcamp by Polkadot India
 
 This repository contains all the assignments, homeworks and problems discussed during the Substrate bootcamp hosted by Polkadot India.
-[Substrate Bootcamp](https://lu.ma/ss2?tk=OzHtWq&utm_source=newsletter&utm_medium=sendy)
+[Substrate Bootcamp](https://lu.ma/ss2?tk=OzHtWq&utm_source=newsletter&utm_medium=sendy).
+You can find the recorded videos here:
 
 
 **Ownership rules:**
