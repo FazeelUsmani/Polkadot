@@ -18,3 +18,8 @@ You can find the recorded videos here:
 
 
 **Patterns:**
+
+
+There were 6 classes:
+1. 9th July 2022
+2. 16th July 2022
