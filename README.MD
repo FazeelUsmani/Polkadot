@@ -21,5 +21,10 @@ You can find the recorded videos here:
 
 
 There were 6 classes:
-1. 9th July 2022
-2. 16th July 2022
+1. 9th July 2022 - Rust lesson 1 - 8
+2. 16th July 2022 - Rust lesson 9 - 18 (17 optional)
+3. 
+
+
+
+* [Networking session - 23rd July 2022](https://twitter.com/_PolkadotIndia/status/1549080840822738944?s=20&t=9GfimlQ5DQmfS8v_Mjylog)
