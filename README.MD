@@ -27,4 +27,10 @@ There were 6 classes:
 
 
 
-* [Networking session - 23rd July 2022](https://twitter.com/_PolkadotIndia/status/1549080840822738944?s=20&t=9GfimlQ5DQmfS8v_Mjylog)
+### Networking Sessions:
+* [23rd July 2022 - Extending Substrate Functionality with Custom Pallet by Ivan Temchenko, Senior Rust Engineer at Polkadex](https://twitter.com/_PolkadotIndia/status/1549080840822738944?s=20&t=9GfimlQ5DQmfS8v_Mjylog)
+
+
+
+### What to do after completing Rust?
+[Small projects with elegand code base](https://practice.rs/elegant-code-base.html)
