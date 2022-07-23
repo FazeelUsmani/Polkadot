@@ -6,6 +6,7 @@ You can find the recorded videos here:
 
 
 **Ownership rules:**
+Rust uses a third approach: memory is managed through a system of ownership with a set of rules that the compiler checks. If any of the rules are violated, the program won’t compile. None of the features of ownership will slow down your program while it’s running.
 * Each value in Rust has an owner.
 * There can only be one owner at a time.
 * When the owner goes out of scope, the value will be dropped.
@@ -34,3 +35,25 @@ There were 6 classes:
 
 ### What to do after completing Rust?
 [Small projects with elegand code base](https://practice.rs/elegant-code-base.html)
+
+
+### Strings
+
+&str - immutable, fast and efficient b
+String::from() - mutable
+
+Ex: 
+```
+x = "hello";
+y = x;  
+println!("{},{}",x,y);   // This works
+
+x = String::from("hello");
+y = x;  
+println!("{},{}",x,y);   // This won't work
+```
+
+will lose memory once out of scope
+
+Use clone() when copying String else use copy instead
+
