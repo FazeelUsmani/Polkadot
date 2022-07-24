@@ -33,6 +33,14 @@ fn main() {
 }
 ```
 
+### Slice
+* Slice will make a deep copy
+```
+let y = Sring:;from("Fazeel");
+let z = &y[2..];
+println!("{}", z);
+```
+
 ### Byte string
 
 Want a string that's not UTF-8? (Remember, str and String must be valid UTF-8). Or maybe you want an array of bytes that's mostly text? Byte strings to the rescue!

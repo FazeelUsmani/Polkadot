@@ -13,10 +13,20 @@ Rust uses a third approach: memory is managed through a system of ownership with
   
  
 **The Rules of References:**
-* Let’s recap what we’ve discussed about references:
 * At any given time, you can have either one mutable reference or any number of immutable references.
 * References must always be valid.
-
+```
+let mut x = 1;
+let y = &x;
+let z = &x;
+let a = &mut x; // ERROR
+```
+```
+let mut x = 2;
+let a = &mut x;
+println!("{}", a);
+let b = &mut x;
+```
 
 **Patterns:**
 
@@ -39,8 +49,8 @@ There were 6 classes:
 
 ### Strings
 
-&str - immutable, fast and efficient b
-String::from() - mutable
+&str - immutable, fast and efficient, static, allocates space in stack
+String::from() - mutable, stores in heap, String data structure, dynamic
 
 Ex: 
 ```
@@ -53,7 +63,40 @@ y = x;
 println!("{},{}",x,y);   // This won't work
 ```
 
-will lose memory once out of scope
+* Will lose memory once out of scope
 
-Use clone() when copying String else use copy instead
+* Use clone() when copying String else use copy instead
+
+
+
+Array - static
+Vector - dynamic
+
+```
+let x = vec![1,2,3]
+x.push(5);
+println!("{} {}", x.len(), x.capacity());
+```
+
+
+__By default, 4 bytes of capacity is allocated for vector__
+```
+let mut x = Vec::new();
+x.push(1);
+x.len(); // 1
+x.capacity(); // 4
+```
+
+Attribute macros # = #[derive(Debug)]
+Predefined macros ! = prinln!, format!
+
+{:?} normal print
+{:#>} pretty format
+
+impl -> creating new functionality
+
+traint -> extending a functionality. Ex: clone, copy, iterator
+
+f
+
 
