@@ -67,7 +67,17 @@ println!("{},{}",x,y);   // This won't work
 
 * Use clone() when copying String else use copy instead
 
+* utf8_slice
+You can use utf8_slice to slice UTF8 string, it can index chars instead of bytes.
+```
+use utf8_slice;
+fn main() {
+   let s = "The 🚀 goes to the 🌑!";
 
+   let rocket = utf8_slice::slice(s, 4, 5);
+   // Will equal "🚀"
+}
+```
 
 Array - static
 Vector - dynamic
@@ -98,3 +108,6 @@ impl -> creating new functionality
 traits -> extending a functionality. Ex: clone, copy, iterator
 
 __Note:__ Traits are similar to interfaces in other languages, although with some differences.
+
+* The impl Trait syntax works for straightforward cases but is actually syntax sugar for a longer form, which is called a trait bound.
+
