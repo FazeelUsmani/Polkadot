@@ -95,8 +95,6 @@ Predefined macros ! = prinln!, format!
 
 impl -> creating new functionality
 
-traint -> extending a functionality. Ex: clone, copy, iterator
+traits -> extending a functionality. Ex: clone, copy, iterator
 
-f
-
-
+__Note:__ Traits are similar to interfaces in other languages, although with some differences.
