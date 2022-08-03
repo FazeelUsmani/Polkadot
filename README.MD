@@ -111,3 +111,49 @@ __Note:__ Traits are similar to interfaces in other languages, although with som
 
 * The impl Trait syntax works for straightforward cases but is actually syntax sugar for a longer form, which is called a trait bound.
 
+
+# blockchain
+
+__Consensus Model:__ The method that a blockchain uses to batch transactions into blocks and to select which node can submit a block to the chain is called the blockchain's consensus model or consensus algorithm. Ex:- proof-of-work consensus model - the node that completes a computational problem first has the right to submit a block to the chain.
+
+__Smart Contract:__ A smart contract is a program that runs on a blockchain and executes transactions on behalf of users under specific conditions.
+
+__Why Substrate?__
+Substrate is Flexible, Open, Interoperable via XCM or bridges, Future-proof (This I won't believe). There are hard problems around scale, governance, interoperability, and upgradeability to address. Depends on what do you want to build? Substrate can be used in following situations:
+* tailored to a very specific use case
+* able to connect and communicate with other blockchains
+* customizable with predefined composable modular components
+* able to evolve and change with upgrades over time
+
+
+__Relay Chain__: 
+
+The Relay Chain is the central chain of Polkadot. All validators of Polkadot are staked on the Relay Chain in DOT and validate for the Relay Chain. The Relay Chain is composed of a relatively small number of transaction types that include ways to interact with the governance mechanism, parachain auctions, and participating in NPoS. The Relay Chain has deliberately minimal functionality - for instance, smart contracts are not supported. 
+
+
+__Parachain__:
+A parachain is an application-specific data structure that is globally coherent and validatable by the validators of the Relay Chain. They take their name from the concept of parallelized chains that run parallel to the Relay Chain. Most commonly, a parachain will take the form of a blockchain, but there is no specific need for them to be actual blockchains.
+![Resources/images/parachain.png](Resources/images/parachain.png)
+
+__Substrate Architecture:__
+In a decentralized network, all nodes act as both clients that request data and as servers that respond to requests for data. 
+![Resources/images/arch.avif](Resources/images/arch.avif)
+
+* An outer node that handles network activity such as peer discovery, managing transaction requests, reaching consensus with peers, and responding to RPC calls.
+* A runtime that contains all of the business logic for executing the state transition function of the blockchain. The runtime determines whether transactions are valid or invalid and is responsible for handling changes to the blockchain's state transition function.
+
+
+__Network types:__
+
+Substrate-based blockchains can be used in different types of network architecture. For example, Substrate blockchains are used to build the following network types:
+
+* __Private networks__ that limit access to a restricted set of nodes.
+
+* __Solo chains__ that implement their own security protocol and don't connect or communicate with any other chains. Bitcoin and Ethereum are examples of non-Substrate based solo chains.
+
+* __Relay chains__ that provide decentralized security and communication for other chains that connect to them. Kusama and Polkadot are examples of relay chains.
+
+* __Parachains__ that are built to connect to a relay chain and have the ability to communicate with other chains that use the same relay chain. Because parachains depend on the relay chain to finalize the blocks produced, parachains must implement the same consensus protocol as the relay chain they target.
+
+__FRAME__ - Framework for Runtime Aggregation of Modularized Entities
+
